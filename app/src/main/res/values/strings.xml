@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Monsters</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_battle_screen">BattleScreen</string>
+    <string name="title_activity_peers_dialog">PeersDialog</string>
+    <string name="title_activity_selection">SelectionActivity</string>
+    <string name="title_activity_my_collection">MyCollectionActivity</string>
+    <string name="title_activity_statistics">Statistics</string>
+    <string name="title_activity_new_monster">NewMonster</string>
+</resources>

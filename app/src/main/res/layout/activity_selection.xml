@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainscreen_bg_faded"
+    tools:context="com.jonashr.monsters.SelectionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/battlescreen_logo"
+        android:id="@+id/battlescreen_logo" />
+
+    <TextView
+        android:layout_below="@id/battlescreen_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#60000000"
+        android:padding="19dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:text="Select your monsters (0/3)"
+        android:id="@+id/selectMonstersTitle" />
+
+    <ScrollView
+        android:requiresFadingEdge="vertical"
+        android:id="@+id/scrollViewSelection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@id/selectMonstersTitle">
+        <LinearLayout
+            android:id="@+id/listOfMonsters"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

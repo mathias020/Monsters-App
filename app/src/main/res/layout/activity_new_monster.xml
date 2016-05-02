@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.jonashr.monsters.NewMonster">
+
+    <LinearLayout
+        android:id="@+id/top_monster_display"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/newMonster_frame"
+            android:background="@drawable/frame_basic"
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+            <ImageView
+                android:id="@+id/newMonster_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/beu_dragon" />
+            <ImageView
+                android:id="@+id/newMonster_element"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/fire"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newMonster_name"
+            android:text="New monster name"/>
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#00b61e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newMonster_hp"
+                android:text="ATK"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#ff0400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newMonster_atk"
+                android:text="ATK"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#0072ff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newMonster_def"
+                android:text="DEF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/newMonster_attacks"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@id/top_monster_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="ATTACKS"/>
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAllCaps="true"
+                android:textColor="#666666"
+                android:id="@+id/newMonster_attack_1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="ATTACK 1"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textAllCaps="true"
+                android:textColor="#666666"
+                android:id="@+id/newMonster_attack_2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="ATTACK 2"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textAllCaps="true"
+                android:textColor="#666666"
+                android:layout_marginTop="19dp"
+                android:id="@+id/newMonster_attack_3"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/newMonster_attack_1"
+                android:text="ATTACK 3"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@id/newMonster_attacks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/btn_letGo"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="15dp"
+            android:text="LET GO"
+            android:textColor="#FFFFFF"
+            android:background="#e80022"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/btn_catchMonster"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:padding="15dp"
+            android:text="CATCH"
+            android:textColor="#004f0a"
+            android:background="#00e80a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

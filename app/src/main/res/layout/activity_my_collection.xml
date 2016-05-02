@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainscreen_bg_faded"
+    tools:context="com.jonashr.monsters.MyCollectionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/collection_logo"
+        android:id="@+id/collection_logo" />
+
+    <ScrollView
+        android:requiresFadingEdge="vertical"
+        android:id="@+id/scrollViewSelection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@id/collection_logo">
+        <LinearLayout
+            android:id="@+id/listOfMonsters"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

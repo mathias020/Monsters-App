@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60a30300"
+    tools:context="com.jonashr.monsters.PeersDialog">
+
+
+<RelativeLayout
+    android:id="@+id/topBar"
+    android:background="#40000000"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="0dp"
+    android:paddingRight="5dp"
+    android:layout_height="55dp">
+    <TextView
+        android:id="@+id/titleBar"
+        android:layout_width="wrap_content"
+        android:padding="15dp"
+        android:text="Matchmaking"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/scanText"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Scanning..."
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent" />
+    <ProgressBar
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/scanningBar"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/scanText"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+</RelativeLayout>
+
+        <ListView
+            android:layout_below="@id/topBar"
+            android:id="@+id/peerListView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:divider="#FFFFFF"
+            android:dividerHeight="1dp">
+        </ListView>
+    <TextView
+        android:id="@+id/searching"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:textStyle="italic"
+        android:textSize="19sp"
+        android:layout_below="@id/topBar"
+        android:visibility="invisible"
+        android:text="Searching..." />
+    <TextView
+        android:id="@+id/noresults"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:textStyle="italic"
+        android:textSize="19sp"
+        android:layout_below="@id/topBar"
+        android:visibility="invisible"
+        android:text="No results" />
+
+    <Button
+        android:layout_below="@id/peerListView"
+        android:id="@+id/btn_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:background="#40000000"
+        />
+
+</RelativeLayout>
